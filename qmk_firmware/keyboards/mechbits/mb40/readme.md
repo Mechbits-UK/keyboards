@@ -4,17 +4,17 @@
 
 *A short description of the keyboard/project*
 
-* Keyboard Maintainer: [biggz](https://github.com/biggz)
+* Keyboard Maintainer: [biggz](https://github.com/mechbits-uk)
 * Hardware Supported: *The PCBs, controllers supported*
 * Hardware Availability: *Links to where you can find this hardware*
 
 Make example for this keyboard (after setting up your build environment):
 
-    make biggz:default
+    qmk compile -kb mechbits/mb40 -km default
 
 Flashing example for this keyboard:
 
-    make biggz:default:flash
+    copy mechbits_mb40_default.uf2 to RP2040 bootloader
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 

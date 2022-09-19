@@ -1,13 +1,13 @@
 {
-    "manufacturer": "biggz",
-    "keyboard_name": "biggz",
+    "manufacturer": "Mechbits",
+    "keyboard_name": "MB40",
     "maintainer": "biggz",
     "bootloader": "rp2040",
     "processor": "RP2040",
     "diode_direction": "COL2ROW",
     "usb": {
         "device_version": "1.0.0",
-        "pid": "0x0000",
+        "pid": "0x2040",
         "vid": "0xFEED"
     },
     "layouts": {

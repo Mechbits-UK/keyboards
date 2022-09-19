@@ -15,7 +15,7 @@
 #define WS2812_PIO_USE_PIO1 // Force the usage of PIO1 peripheral, by default the WS2812 implementation uses the PIO0 peripheral
 #define RGB_DI_PIN GP27
 #define RGBLED_NUM 6
-#define RGBLIGHT_LIMIT_VAL 120
+#define RGBLIGHT_LIMIT_VAL 200
 #define RGBLIGHT_LAYERS
 
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET // Activates double-tap reset to bootloader
