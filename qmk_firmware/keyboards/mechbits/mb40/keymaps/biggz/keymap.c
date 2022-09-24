@@ -7,6 +7,10 @@ enum my_layers {
     _LAYER3,
 };
 
+// Tap Dance definitions
+qk_tap_dance_action_t tap_dance_actions[] = {
+};
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
      * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐

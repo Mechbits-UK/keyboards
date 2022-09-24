@@ -20,4 +20,3 @@
 
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET // Activates double-tap reset to bootloader
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 500U // Double tap timeout window in ms
-
