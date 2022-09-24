@@ -1,10 +1,10 @@
-# biggz
+# Mechbits MB40
 
 ![biggz](imgur.com image replace me!)
 
 *A short description of the keyboard/project*
 
-* Keyboard Maintainer: [biggz](https://github.com/mechbits-uk)
+* Keyboard Maintainer: [biggz](https://github.com/biggz), [exo](https://github.com/exo-uk)
 * Hardware Supported: *The PCBs, controllers supported*
 * Hardware Availability: *Links to where you can find this hardware*
 
