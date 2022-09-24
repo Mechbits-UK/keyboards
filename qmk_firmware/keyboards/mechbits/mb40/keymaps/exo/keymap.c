@@ -1,11 +1,11 @@
 #include QMK_KEYBOARD_H
 
 enum my_layers {
-    LAYER_0, // Base - Blue
-    LAYER_1, // Lower - Green
-    LAYER_2, // Raise - Yellow
-    LAYER_3, // Numpad - Orange
-    LAYER_4, // Adjust - Red
+    _LAYER0, // Base - Blue
+    _LAYER1, // Lower - Green
+    _LAYER2, // Raise - Yellow
+    _LAYER3, // Numpad - Orange
+    _LAYER4, // Adjust - Red
 };
 // Tap Dance declarations
 enum {
@@ -135,25 +135,25 @@ void keyboard_post_init_user(void) {
 }
 
 layer_state_t default_layer_state_set_user(layer_state_t state) {
-    rgblight_set_layer_state(0, layer_state_cmp(state, LAYER_0));
+    rgblight_set_layer_state(0, layer_state_cmp(state, _LAYER0));
     return state;
 }
 layer_state_t layer_state_set_user(layer_state_t state) {
-    rgblight_set_layer_state(1, layer_state_cmp(state, LAYER_1));
-    rgblight_set_layer_state(2, layer_state_cmp(state, LAYER_2));
-    rgblight_set_layer_state(3, layer_state_cmp(state, LAYER_3));
-    rgblight_set_layer_state(4, layer_state_cmp(state, LAYER_4));
+    rgblight_set_layer_state(1, layer_state_cmp(state, _LAYER1));
+    rgblight_set_layer_state(2, layer_state_cmp(state, _LAYER2));
+    rgblight_set_layer_state(3, layer_state_cmp(state, _LAYER3));
+    rgblight_set_layer_state(4, layer_state_cmp(state, _LAYER4));
     /*switch (get_highest_layer(state)){
-        case LAYER_1:
+        case _LAYER1:
             rgblight_setrgb(0,255,0);
             break;
-        case LAYER_2:
+        case _LAYER2:
             rgblight_setrgb(255,0,255);
             break;
-        case LAYER_3:
+        case _LAYER3:
             rgblight_setrgb(255,128,0);
             break;
-        case LAYER_4:
+        case _LAYER4:
             rgblight_setrgb(0,255,255);
             break;
         default: // For other layers or default layer
