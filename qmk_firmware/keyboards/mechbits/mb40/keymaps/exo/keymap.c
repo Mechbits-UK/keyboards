@@ -92,16 +92,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
       │     │  Á  │     │     │     │     │     │Mode+│Hue+ │Sat+ │Brgt+│Efct+│
       ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-      │Shift│     │     │     │     │     │     │Mode-│Hue- │Sat- │Brgt-│Efct-│
+      │Shift│     │     │     │     │     │     │Mode-│Hue- │Sat- │Brgt-│Efct-│ ** Double tap Shift to toggle Caps Lock **
       ├─────┼─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────┼─────┤
       │     │     │     │     │Lower│           │Raise│     │AltGr│Debug│Reset│ 
       └─────┴─────┴─────┴─────┴─────┴───────────┴─────┴─────┴─────┴─────┴─────┘
     */
     [_LAYER4] = LAYOUT_planck(
-      KC_GRV,   KC_NO,  KC_E,   KC_4,   KC_NO,  KC_NO,  KC_NO,  KC_U,      KC_I,     KC_O,     KC_NO,    KC_NO,
-      KC_NO,    KC_A,   KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  RGB_MOD,   RGB_HUI,  RGB_SAI,  RGB_VAI,  RGB_SPI,
-      KC_LSFT,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  RGB_RMOD,  RGB_HUD,  RGB_SAD,  RGB_VAD,  RGB_SPD,
-      KC_NO,    KC_NO,  KC_NO,  KC_NO,  TO(0),      KC_NO,      TO(0),     KC_NO,    KC_RALT,  DB_TOGG,  QK_BOOT
+      KC_GRV,             KC_NO,  KC_E,   KC_4,   KC_NO,  KC_NO,  KC_NO,  KC_U,      KC_I,     KC_O,     KC_NO,    KC_NO,
+      KC_NO,              KC_A,   KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  RGB_MOD,   RGB_HUI,  RGB_SAI,  RGB_VAI,  RGB_SPI,
+      TD(TD_SHIFT_CAPS),  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  RGB_RMOD,  RGB_HUD,  RGB_SAD,  RGB_VAD,  RGB_SPD,
+      KC_NO,              KC_NO,  KC_NO,  KC_NO,  TO(0),      KC_NO,      TO(0),     KC_NO,    KC_RALT,  DB_TOGG,  QK_BOOT
     ),
 }; // End keymap
 // Start LED Layers
